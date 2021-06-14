@@ -1,3 +1,3 @@
 filebeat_modules_enable_system:
-  'sudo filebeat modules enable system':
-    cmd.run
+  cmd.run
+    - name: 'sudo filebeat modules enable system'
