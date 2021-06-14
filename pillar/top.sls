@@ -1,3 +1,5 @@
 base:
   '*':
     - default
+    - master
+    - elastic

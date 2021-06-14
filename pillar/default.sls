@@ -1,1 +1,1 @@
-editor: vim
+EDITOR: vim
