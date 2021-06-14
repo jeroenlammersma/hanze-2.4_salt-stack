@@ -1,4 +1,4 @@
-{%- set HOST = salt['pillar.get']('master:MASTER_IP', '') %}
+{% set HOST = salt['pillar.get']('MASTER_IP', '') %}
 
 ###################### Filebeat Configuration Example #########################
 
@@ -177,7 +177,7 @@ setup.kibana:
 # ---------------------------- Elasticsearch Output ----------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["{{  HOST }}:9200"]
+  hosts: ["{{ HOST }}:9200"]
   username: "elastic"
   password: "changeme"
 
