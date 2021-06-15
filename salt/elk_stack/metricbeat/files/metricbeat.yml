@@ -1,4 +1,4 @@
-{% set NAME = salt['grains.get']('fqdn') %}
+{% set NAME = salt['grains.get']('host') %}
 
 {% set HOST = salt['pillar.get']('MASTER_IP') %}
 {% set ELASTICSEARCH_PORT = salt['pillar.get']('ELASTICSEARCH_PORT') %}
