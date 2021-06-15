@@ -2,6 +2,7 @@ filebeat_conf:
   file.managed:
     - name: /etc/filebeat/filebeat.yml
     - source: salt://elk_stack/filebeat/files/filebeat.yml
+    - template: jinja
   service.running:
     - name: filebeat
     - enable: true

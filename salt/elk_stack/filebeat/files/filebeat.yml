@@ -1,4 +1,8 @@
-{% set HOST = salt['pillar.get']('MASTER_IP', '') %}
+{% set HOST = salt['pillar.get']('MASTER_IP') %}
+{% set ELASTICSEARCH_PORT = salt['pillar.get']('ELASTICSEARCH_PORT') %}
+{% set ELASTICSEARCH_USERNAME = salt['pillar.get']('ELASTICSEARCH_USERNAME') %}
+{% set ELASTICSEARCH_PASSWORD = salt['pillar.get']('ELASTICSEARCH_PASSWORD')}
+{% set KIBANA_PORT = salt['pillar.get']('KIBANA_PORT') %}
 
 ###################### Filebeat Configuration Example #########################
 
@@ -150,7 +154,7 @@ setup.kibana:
   # Scheme and port can be left out and will be set to the default (http and 5601)
   # In case you specify and additional path, the scheme is required: http://localhost:5601/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:5601
-  host: "10.0.7.53:5601"
+  host: "{{ HOST }}:{{ KIBANA_PORT }}"
 
   # Kibana Space ID
   # ID of the Kibana Space into which the dashboards should be loaded. By default,
@@ -177,17 +181,15 @@ setup.kibana:
 # ---------------------------- Elasticsearch Output ----------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["{{ HOST }}:9200"]
-  username: "elastic"
-  password: "changeme"
+  hosts: ["{{ HOST }}:{{ ELASTICSEARCH_PORT }}"]
 
   # Protocol - either `http` (default) or `https`.
   #protocol: "https"
 
   # Authentication credentials - either API key or username/password.
   #api_key: "id:api_key"
-  #username: "elastic"
-  #password: "changeme"
+  username: "{{ ELASTICSEARCH_USERNAME }}"
+  password: "{{ ELASTICSEARCH_PASSWORD }}"
 
 # ------------------------------ Logstash Output -------------------------------
 #output.logstash:
