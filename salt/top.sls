@@ -8,3 +8,4 @@ base:
     - elk_stack.metricbeat.modules.apache
     - elk_stack.filebeat.modules.mysql
     - elk_stack.metricbeat.modules.mysql
+    - apache
