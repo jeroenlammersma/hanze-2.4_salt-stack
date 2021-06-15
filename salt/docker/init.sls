@@ -1,2 +1,2 @@
 include:
-  - docker.install.sls
+  - docker.install
