@@ -6,5 +6,4 @@ filebeat_conf:
     - name: filebeat
     - enable: true
     - require:
-      - filebeat
       - file: /etc/filebeat/filebeat.yml
