@@ -1,7 +1,7 @@
 {% set HOST = salt['pillar.get']('MASTER_IP') %}
 {% set ELASTICSEARCH_PORT = salt['pillar.get']('ELASTICSEARCH_PORT') %}
 {% set ELASTICSEARCH_USERNAME = salt['pillar.get']('ELASTICSEARCH_USERNAME') %}
-{% set ELASTICSEARCH_PASSWORD = salt['pillar.get']('ELASTICSEARCH_PASSWORD')}
+{% set ELASTICSEARCH_PASSWORD = salt['pillar.get']('ELASTICSEARCH_PASSWORD') %}
 {% set KIBANA_PORT = salt['pillar.get']('KIBANA_PORT') %}
 
 ###################### Filebeat Configuration Example #########################
