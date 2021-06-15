@@ -1,7 +1,7 @@
 include:
   - php
 
-php_apache_install:
+apache_php_install:
   pkg.installed:
     - pkgs:
       - libapache2-mod-php
