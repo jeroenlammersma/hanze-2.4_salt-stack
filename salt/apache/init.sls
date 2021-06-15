@@ -1,3 +1,3 @@
 include:
   - apache.install
-  - apache.conf
+  - apache.service

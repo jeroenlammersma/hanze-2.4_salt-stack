@@ -3,9 +3,5 @@ filebeat_conf:
     - name: /etc/filebeat/filebeat.yml
     - source: salt://elk_stack/filebeat/files/filebeat.yml
     - template: jinja
-  service.running:
-    - name: filebeat
-    - enable: true
     - require:
       - filebeat_install
-      - file: /etc/filebeat/filebeat.yml
