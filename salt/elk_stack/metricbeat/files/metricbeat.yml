@@ -1,3 +1,5 @@
+{% set NAME = grains['hostname'] %}
+
 {% set HOST = salt['pillar.get']('MASTER_IP') %}
 {% set ELASTICSEARCH_PORT = salt['pillar.get']('ELASTICSEARCH_PORT') %}
 {% set ELASTICSEARCH_USERNAME = salt['pillar.get']('ELASTICSEARCH_USERNAME') %}
@@ -37,7 +39,7 @@ setup.template.settings:
 
 # The name of the shipper that publishes the network data. It can be used to group
 # all the transactions sent by a single shipper in the web interface.
-name: ubu-22
+name: {{ NAME }}
 
 # The tags of the shipper are included in their own field with each
 # transaction published.
