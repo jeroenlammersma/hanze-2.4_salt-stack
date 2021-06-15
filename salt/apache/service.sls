@@ -2,5 +2,5 @@ apache_service:
   service.running:
     - name: apache2
     - enable: true
-    -  require:
+    - require:
       - apache_install
