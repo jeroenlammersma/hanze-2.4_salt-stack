@@ -6,3 +6,4 @@ include:
   cmd.run:
     - require:
       - filebeat_install
+      - mysql_install

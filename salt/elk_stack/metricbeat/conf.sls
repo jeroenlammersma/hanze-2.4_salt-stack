@@ -1,7 +1,7 @@
 metricbeat_conf:
   file.managed:
     - name: /etc/metricbeat/metricbeat.yml
-    - source: salt://elk_stack/metricbeat/metricbeat.yml
+    - source: salt://elk_stack/metricbeat/files/metricbeat.yml
   service.running:
     - name: metricbeat
     - enable: true
