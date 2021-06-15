@@ -1,5 +1,5 @@
 apache_service:
-  - service.running:
+  service.running:
     - name: apache2
     - enable: true
     -  require:
