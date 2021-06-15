@@ -6,4 +6,4 @@ include:
   cmd.run:
     - require:
       - filebeat_install
-      - apache_install
+#      - apache_install

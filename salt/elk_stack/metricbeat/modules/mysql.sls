@@ -6,4 +6,4 @@ include:
   cmd.run:
     - require:
       - metricbeat_install
-      - mysql_install
+#      - mysql_install

@@ -6,4 +6,4 @@ include:
   cmd.run:
     - require:
       - metricbeat_install
-      - apache_install
+#      - apache_install
