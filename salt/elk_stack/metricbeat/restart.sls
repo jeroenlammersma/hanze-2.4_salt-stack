@@ -3,4 +3,4 @@ metricbeat_restart:
     - name: service.restart
     - m_name: metricbeat
     - require:
-      - pkg: metricbeat_install
+      - metricbeat_installl

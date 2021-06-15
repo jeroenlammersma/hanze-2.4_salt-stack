@@ -5,4 +5,4 @@ include:
 'sudo filebeat modules enable apache':
   cmd.run:
     - require:
-      - pkg: filebeat_install
+      - filebeat_install
