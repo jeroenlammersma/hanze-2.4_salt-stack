@@ -6,5 +6,5 @@ metricbeat_conf:
     - name: metricbeat
     - enable: true
     - require:
-      - metricbeat
+      - metricbeat_install
       - file: /etc/metricbeat/metricbeat.yml

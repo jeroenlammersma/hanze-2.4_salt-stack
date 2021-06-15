@@ -3,4 +3,6 @@ include:
   - elk_stack.metricbeat.conf
 
 'sudo metricbeat modules enable mysql':
-  cmd.run
+  cmd.run:
+    - require:
+      - pkg: metricbeat_install

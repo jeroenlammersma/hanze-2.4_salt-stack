@@ -4,4 +4,4 @@ include:
 metricbeat_install:
   pkg.installed:
     - pkgs:
-      - metricbeat
+      - metricbeat_install

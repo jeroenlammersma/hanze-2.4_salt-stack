@@ -3,4 +3,6 @@ include:
   - elk_stack.filebeat.conf
 
 'sudo filebeat modules enable apache':
-  cmd.run
+  cmd.run:
+    - require:
+      - pkg: filebeat_install
