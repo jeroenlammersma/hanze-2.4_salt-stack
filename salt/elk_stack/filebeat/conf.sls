@@ -6,6 +6,5 @@ filebeat_conf:
     - name: filebeat
     - enable: true
     - require:
-      - pkg:
-        - filebeat
+      - pkg: vim
       - file: /etc/filebeat/filebeat.yml

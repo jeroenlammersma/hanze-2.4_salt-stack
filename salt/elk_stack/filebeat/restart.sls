@@ -3,5 +3,4 @@ filebeat_restart:
     - name: service.restart
     - m_name: filebeat
     - require:
-      - pkg:
-        - filebeat
+      - pkg: vim
