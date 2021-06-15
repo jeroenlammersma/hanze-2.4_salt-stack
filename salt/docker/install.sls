@@ -5,5 +5,5 @@ docker_install:
   pkg.installed:
     - pkgs:
       - "docker-ce"
-      - "docker-ce-cli"
-      - "containerd.io"
+#      - "docker-ce-cli"
+#      - "containerd.io"
