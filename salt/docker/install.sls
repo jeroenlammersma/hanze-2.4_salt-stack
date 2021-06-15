@@ -6,4 +6,4 @@ docker_install:
     - pkgs:
       - docker-ce
       - docker-ce-cli
-      - "containerd.io"
+      - containerd.io
