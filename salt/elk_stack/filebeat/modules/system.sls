@@ -5,4 +5,4 @@ include:
 'sudo filebeat modules enable system':
   cmd.run:
     - require:
-      - pkg: filebeat
+      - filebeat
