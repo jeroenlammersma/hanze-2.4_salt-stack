@@ -5,4 +5,4 @@ include:
 'sudo metricbeat modules enable mysql':
   cmd.run:
     - require:
-      - pkg: metricbeat_install
+      - metricbeat_install

@@ -5,4 +5,4 @@ include:
 'sudo metricbeat modules enable system':
   cmd.run:
     - require:
-      - pkg: metricbeat_install
+      - metricbeat_install
