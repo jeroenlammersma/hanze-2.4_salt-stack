@@ -1,7 +1,7 @@
 include:
   - elk_stack.repo
 
-filebeat_install:
+metricbeat_install:
   pkg.installed:
     - pkgs:
-      - filebeat
+      - metricbeat

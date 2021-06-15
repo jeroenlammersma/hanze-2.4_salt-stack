@@ -1,3 +1,6 @@
-filebeat_modules_enable_system:
-  filebeat modules enable mysql:
-    cmd.run
+include:
+  - elk_stack.filebeat.install
+  - elk_stack.filebeat.conf
+
+'sudo filebeat modules enable mysql':
+  cmd.run
