@@ -4,7 +4,7 @@ apache_service:
     - enable: true
     - require:
       - apache_install
-    - watch:
-      - file: /etc/apache2/mods-enabled/userdir.conf
-      - file: /etc/apache2/mods-enabled/userdir.load
-      - file: /etc/apache2/mods-available/*.conf
+#    - watch:
+#      - file: /etc/apache2/mods-enabled/userdir.conf
+#      - file: /etc/apache2/mods-enabled/userdir.load
+#      - file: /etc/apache2/mods-available/*.conf
